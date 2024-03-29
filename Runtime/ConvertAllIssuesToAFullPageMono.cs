@@ -12,13 +12,19 @@ public class ConvertAllIssuesToAFullPageMono : MonoBehaviour
     public Eloi.AbstractMetaAbsolutePathDirectoryMono m_whereToStoreitDirectory;
     public Eloi.MetaFileNameWithExtension m_fileName= new Eloi.MetaFileNameWithExtension("FullIssues","md");
     public bool m_orderBy;
+    public bool m_orderByTitle;
 
     [ContextMenu("Create")]
     public void Create()
     {
         StringBuilder sb = new StringBuilder();
-        var issues =
-            m_orderBy? m_source.m_issue.OrderBy(k => k.number): m_source.m_issue.OrderByDescending(k => k.number);
+
+        IEnumerable<GitHubJsonBeans.Issue> issues;
+
+        if(m_orderByTitle)
+            issues = m_orderBy ? m_source.m_issue.OrderBy(k => k.title) : m_source.m_issue.OrderByDescending(k => k.title);
+        else 
+            issues = m_orderBy ? m_source.m_issue.OrderBy(k => k.number) : m_source.m_issue.OrderByDescending(k => k.number);
 
         foreach (var issue in issues)
         {

@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.githubissuerest",                              
+  "displayName": "Unity REST api for Github Issue",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Just some function to work with GitHub Issue from the rest api.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"Eloi Stree",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2023_11_24_GitHubIssueRestAPI.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
