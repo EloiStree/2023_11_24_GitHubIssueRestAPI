@@ -9,8 +9,9 @@ public class GitHubJsonBeans
     
     [System.Serializable]
     public class IssueGroup {
-        public Issue[] m_issue;
+        public Issue[] m_issue= new Issue[0] ;
         public void ConvertDate() {
+            if(m_issue!=null )
             foreach (var item in m_issue)
             {
                 item.ConvertDate();

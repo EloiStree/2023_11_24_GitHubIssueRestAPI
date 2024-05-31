@@ -19,14 +19,15 @@ public class GitHubJsonToPageSharpMono : MonoBehaviour
         m_issueGroup.Clear();
         m_path = m_whereToStoreitDirectory.GetPath();
         Debug.Log(m_path);
-        m_filesFound= Directory.GetFiles(m_path+ $"\\GitIssues\\{m_userId}\\{m_respositoryId}", "*P*.json", SearchOption.AllDirectories);
+        m_filesFound= Directory.GetFiles(m_path+ $"\\GitIssues\\{m_userId}\\{m_respositoryId}", "*I*.json", SearchOption.AllDirectories);
         foreach (var item in m_filesFound)
         {
-            string t = "{\"m_issue\":" + File.ReadAllText(item) + "}";
-            GitHubJsonBeans.IssueGroup  issue = JsonUtility.FromJson<GitHubJsonBeans.IssueGroup>(t);
+            string t = File.ReadAllText(item);
+                //"{\"m_issue\":" + File.ReadAllText(item) + "}";
+
+            GitHubJsonBeans.Issue  issue = JsonUtility.FromJson<GitHubJsonBeans.Issue>(t);
             issue.ConvertDate();
-            m_issueGroup.Add(issue);
-            m_issue.AddRange(issue.m_issue);
+            m_issue.Add(issue);
 
         }
     }
