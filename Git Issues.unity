@@ -123,6 +123,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &194444847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194444848}
+  - component: {fileID: 194444849}
+  m_Layer: 0
+  m_Name: Create page
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194444848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194444847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 528590523}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194444849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194444847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e34e25e609e91240ac396e26b2944d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_source: {fileID: 528590525}
+  m_whereToStoreitDirectory: {fileID: 528590524}
+  m_fileName:
+    m_fileName: 2024_07_01_HelloUnityShieldDroneMons
+    m_extensionNameWithoutDot: md
+  m_orderBy: 1
+  m_orderByTitle: 1
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +349,1316 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4490110159359200279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &528590522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 528590523}
+  - component: {fileID: 528590525}
+  - component: {fileID: 528590526}
+  - component: {fileID: 528590524}
+  m_Layer: 0
+  m_Name: HelloMons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &528590523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528590522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 194444848}
+  m_Father: {fileID: 388952208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &528590524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528590522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21781fdc6cf4dc469cc74d46594e43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &528590525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528590522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991594aaf37852947be7eba0c961aae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_userId: EloiStree
+  m_respositoryId: 2024_07_01_HelloUnityShieldDroneMons
+  m_whereToStoreitDirectory: {fileID: 528590524}
+  m_filesFound:
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0001.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0002.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0003.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0004.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0005.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0006.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0007.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0008.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0009.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0010.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0011.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0012.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0013.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0014.json
+  - C:\Life\Package\EloiPackNoXR\Assets\GitIssues\EloiStree\2024_07_01_HelloUnityShieldDroneMons\I0015.json
+  m_path: C:\Life\Package\EloiPackNoXR\Assets
+  m_issue:
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/1
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/1/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/1/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/1/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/1
+    id: -2022833726
+    node_id: I_kwDOL1Wubs6HbgHC
+    number: 1
+    title: '#Reserver'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:46:01Z
+    updated_at: 2024-04-30T17:46:01Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: 
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/1/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/2
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/2/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/2/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/2/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/2
+    id: -2022832907
+    node_id: I_kwDOL1Wubs6HbgT1
+    number: 2
+    title: '2024_07_01: Git Package'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 1
+    created_at: 2024-04-30T17:46:39Z
+    updated_at: 2024-04-30T18:34:40Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "# To Do Today\r\n-  \r\n\r\n# Draft links\r\n- https://github.com/EloiStree/HelloUnityPackage/wiki\r\n\r\n\r\n#
+      Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n- Suivant un package droner
+      d'un drone dans une sph\xE8re de 20 cm.\r\n  - Cr\xE9\xE9 un dossier dans Unity
+      avec votre propre format de drone\r\n  - D\xE9poser un script de tag sur le
+      prefab de votre drone et placer le dans le dossier ressource\r\n  - D\xE9corer
+      le dossier comme si vous vouliez le publier sur un magasin Unity\r\n  - Publier
+      le sur GitHub et fait un pull request sur le projet git manifest du groupe\r\n- 
+      Utiliser le Git manifest du groupe pour cr\xE9\xE9 une piscine de drone \xE0
+      utiliser dans Unity3D\r\n\r\n## Exercice 2\r\n- Importer un package de circuit
+      pour drone dans Unity.\r\n  - Fait un circuit sur une distance de 16x16x16\r\n 
+      - Tag le point d'entr\xE9e et le point de sortie\r\n  - Tag le pr\xE9fab du
+      circuit et placer le dans Resource\r\n  - Placer le sur Github et ajouter le
+      au manifest de groupe.\r\n \r\n## Fin de l'exercice  \r\n Importer le circuit
+      d'autres \xE9tudiants dans votre manifest et fait un tour avec votre drone
+      en solitaire.\r\n  \r\n"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/2/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/3
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/3/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/3/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/3/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/3
+    id: -2022832749
+    node_id: I_kwDOL1Wubs6HbgWT
+    number: 3
+    title: '2024_07_02: Websocket and Rotation'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:46:46Z
+    updated_at: 2024-04-30T18:58:35Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "\r\n# Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n- Via un websocket
+      client en C#\r\n  - Apprendre \xE0 ce connecter \xE0 au websocket server (server
+      fournir, voir iMMo Relay)\r\n  - Apprendre \xE0 envoy\xE9 un message et en
+      recevoir \r\n  - Apprendre \xE0 envoy\xE9 des bytes\r\n  - Apprendre \xE0 signer
+      un message avec RSA (skip si niveau programmation pas assez \xE9lever)\r\n 
+      - Envoy\xE9 un entier en bytes reposition le drone au point de d\xE9part du
+      circuit.\r\n  - Envoy\xE9 un entier dans le format de iMMo bouge le drone sur
+      un \xE9cran \xE0 12 joueurs.\r\n  \r\n## Exercice 2\r\nExercice de \"TAS\",
+      interdit d'utiliser des manettes dans cette execice.\r\n- Junior: Via un circuit
+      construit avec les packages du jour avant.\r\n  - Apprendre \xE0 bouger et
+      faire tourner un drone en solo\r\n- Medior: Via un circuit dynamique des packages
+      du jour avant.\r\n  - Apprendre \xE0 faire la course avec le drone en solo.\r\n-
+      Expert: Apprendre \xE0 faire la course avec le drone en mode acrobatique \r\n\r\nLe
+      but est de pratiquer les rotations d'un object dans l'espace. "
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/3/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/4
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/4/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/4/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/4/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/4
+    id: -2022832619
+    node_id: I_kwDOL1Wubs6HbgYV
+    number: 4
+    title: '2024_07_03: Mirror and Job System'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:46:51Z
+    updated_at: 2024-04-30T23:25:37Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "# Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n- Apprendre \xE0 recevoir
+      des donn\xE9es du server Mirror en utilisant un package.\r\n  - Rejoindre le
+      server de jeu avec le code websocket d'hier \r\n  - Via un NativeArray d'entier,
+      trouver l'index de son drone\r\n  - Via cette index, trouver les informations
+      de son drone.\r\n  - Via la position et la rotation du drone sur le server
+      continuer l'exercice d'hier\r\n\r\n## Exercice 2\r\n- Apprendre \xE0 dessiner
+      un triangle avec un position et une rotation dans un Mesh Unity hors ligne\r\n-
+      Apprendre \xE0 bouger ce triangle \xE0 partir d'un Vector3 et d'une rotation\r\n-
+      Apprendre \xE0 cr\xE9\xE9 un job qui affiche des triangles depuis un group
+      de Vector3 et de Quaternion\r\n- Via le native array avec les informations
+      du drone fournit par Mirror afficher tout les joueurs  et les \"bots\" dans
+      la partie\r\n- Exercice mod\xE9r\xE9: Cr\xE9\xE9 une continuit\xE9 entre les
+      frames r\xE9seaux re\xE7u.\r\n- Exercice expert: pr\xE9dire la continuit\xE9
+      de la frame suivant"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/4/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/5
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/5/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/5/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/5/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/5
+    id: -2022832458
+    node_id: I_kwDOL1Wubs6Hbga2
+    number: 5
+    title: '2024_07_04: LOD and Optimisation'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:46:57Z
+    updated_at: 2024-04-30T19:14:39Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "\r\n# Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n- Via le job system
+      d\xE9terminer la distance entre un drone dans l'exercice d'hier et \xE7a pr\xE9sence
+      dans la camera.\r\n- Via le job system d\xE9terminer l'utilisation d'une pool
+      de pr\xE9fab.\r\n- Utiliser l'outil de LOD de Unity sur c'est pr\xE9fab\r\n-
+      Si le drone est \xE0 port\xE9, utiliser le mod\xE8le 3D de l'\xE9tudiant correspondant
+      \xE0 son identifiant dans le native array.\r\n  - Mod\xE8le par d\xE9faut si
+      pas identifier\r\n- Niveau expert, choisissez un de ses sujets: \r\n  - Cr\xE9\xE9
+      un imposteur pour les drones au loin\r\n  - Utiliser le Draw Mesh pour tout
+      les drones \xE0 moyen port\xE9e \r\n  - Faire une transition entre Imposteur,
+      Draw Mesh, une piscine d'objet et du LOD."
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/5/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/6
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/6/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/6/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/6/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/6
+    id: -2022832327
+    node_id: I_kwDOL1Wubs6Hbgc5
+    number: 6
+    title: '2024_07_05: Android XR and Open XR'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:47:03Z
+    updated_at: 2024-04-30T20:59:11Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "# Casque pr\xE9sent:\r\nPar Technocit\xE9:\r\n- [MetaQuest Pro](https://www.google.com/search?q=meta+quest+pro)\r\n-
+      [Pico 4](https://www.google.com/search?q=pico+4)\r\n- [HTC VIVE XR \xC9lite](https://www.google.com/search?q=HTC+Vive+XR+Elite)\r\n-
+      [HTC VIVE Pro 2](https://www.google.com/search?q=HTC+Vive+Pro+2)\r\n- [Pimax
+      Crystal](https://www.google.com/search?q=pimax+crystal)\r\n- [Oculus quest
+      2](https://www.google.com/search?q=meta+quest+2)\r\n\r\nPar Eloi:\r\n- [Quest
+      1-2-3](https://www.google.com/search?q=Quest+1+2+3+headset+vr)\r\n- [Oculus
+      Rift CV1](https://www.google.com/search?q=oculus+rift+CV1)\r\n- [Lynx R1](https://www.google.com/search?q=Lynx+R1)\r\n-
+      [Homido Mini (^^'  )](https://www.google.com/search?q=homido+mini)\r\n\r\n\r\n#
+      Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n- Avec Quest pour les juniors
+      et autres caques pour les experts. Cr\xE9\xE9 un projet avec un Cube tournant
+      via Unity3D.\r\n- Junior: Utiliser juste la VR sur PC sans builder sur Android.\r\n-
+      Medior: Faire l'exercice avec des casques hors cours (non Quest).\r\n- Expert:
+      Utiliser le code de Meta Phanto pour en faire une application de r\xE9alit\xE9
+      Mixed\r\n- Expert, Open source: utiliser le Lynx R1\r\n\r\n## Exercice 2\r\n\r\n-
+      Ajouter le code d'un drone en solo et utiliser le Input System de Unity pour
+      le bouger.\r\n\r\n## Exercice 3\r\n\r\n- Essayer de faire tourner le code de
+      cette semaine dans un casque de VR\r\n  - Dupliquer votre projet de cette semaine
+      \r\n  - Essayer d'installer Open XR dans votre projet non VR et de le faire
+      tourner\r\n  - Expert: fait tourner le projet en r\xE9alit\xE9 Mixed.\r\n 
+      - Expert plus: Explorer XRToolkit 2\r\n"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/6/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/7
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/7/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/7/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/7/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/7
+    id: -2022832027
+    node_id: I_kwDOL1Wubs6Hbghl
+    number: 7
+    title: '2024_07_16: Hello XR and Meta Quest'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:47:11Z
+    updated_at: 2024-04-30T19:33:32Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "\r\n# Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n\r\n- En groupe,
+      installer un \xE0 deux jeux pour le casque donn\xE9.\r\n- Passer de group en
+      groupe dans le but de tester au moins deux casques diff\xE9rents.\r\n\r\n#
+      Exercice 2\r\n- Groupe selon les Quests pr\xE9sent dans la formation.\r\n-
+      Installer SideQuest sur votre machine\r\n- Via SideQuest installer un des jeux
+      propos\xE9s\r\n- Via SideQuest, connecter votre PC \xE0 votre ordinateur par
+      Wifi, ou par cable, dans le but de voir ce les autres membres du groupe.\r\n-
+      Via SideQuest changer d'application sur le Quest pendant qu'un autre \xE9l\xE8ve
+      joue.\r\n- Via OBS pour ceux qui connaissent, enregistr\xE9 le playthrough
+      \r\n\r\n\r\n\r\n"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/7/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/8
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/8/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/8/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/8/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/8
+    id: -2022831769
+    node_id: I_kwDOL1Wubs6Hbgln
+    number: 8
+    title: '2024_07_17: Package Manager for Level Design and XR'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:47:19Z
+    updated_at: 2024-04-30T19:48:01Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "\r\n# Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n\r\n- Avec le casque
+      que vous avez, cr\xE9\xE9 un projet Unity de r\xE9alit\xE9 mixed avec un cube
+      qui tourner\r\n- Essayer de le builder sur le casque\r\n- Expert: assurez vous
+      que le jeu tourne en r\xE9alit\xE9 mixed\r\n- Expert: Utiliser vos comp\xE9tences
+      acquis pour ajouter un d\xE9cors volant de 16x16x16 max.\r\n\r\n## Exercice
+      2\r\n- Via un package donn\xE9 qui est le meme qu'ont re\xE7u  les d\xE9veloppeurs
+      cr\xE9\xE9 un case de 16x16x16 avec un level design facile, medium, difficile.\r\n-
+      Avant de commencer, prenez le temps en groupe de 12 de vous concertez dans
+      le but de faire une carte global avec des cases de 16x16x16\r\n- Cr\xE9\xE9
+      un \xE0 plusieurs niveaux et baliser les prefabs de script tag\r\n- Via GitHub
+      publier votre package dans le format du package manager.\r\n  - Pour un level
+      static:\r\n    - Les prefabs de votre level est en 0x0x0 et la carte fait maximum
+      256x256x256 de distance. \r\n  - Pour un level dynamique: le level doit \xEAtre
+      sauver dans un dossier Resources.\r\n\r\nDurant l'exercice, vos package seront
+      recharger tout les 10 minutes et jouer par le code des d\xE9veloppeurs si tout
+      c'est bien pass\xE9 la semaine d'avant.\r\n\r\n"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/8/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/9
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/9/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/9/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/9/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/9
+    id: -2022831478
+    node_id: I_kwDOL1Wubs6HbgqK
+    number: 9
+    title: '2024_07_18: XR and the industrie'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T17:47:27Z
+    updated_at: 2024-04-30T20:51:03Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "# Brouillons d'exercice:\r\n\r\n## Exercice 1\r\n- En groupe, de 3 cr\xE9\xE9
+      un pecha kucha bas\xE9 sur des recherches internet dans le google slide partager
+      au groupe.\r\n  - avec le top 9 des meilleurs applications de r\xE9alit\xE9
+      mixed\r\n  - avec le top 9 des meilleurs mechanisms XR qui vous ont impressionn\xE9\r\n 
+      - Finniser le slide avec un 1 app et un m\xE9canisme qui si vous deviez en
+      code un, ce serait \xE7a.\r\n- Si il y a doublons \xE0 15h30, les sides sont
+      retir\xE9 \r\n- A 16h, les quatres groupe pr\xE9sent leur slide. \r\n\r\n\r\n"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/9/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/10
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/10/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/10/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/10/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/10
+    id: -2022524941
+    node_id: I_kwDOL1Wubs6Hcrfz
+    number: 10
+    title: 'Topic: Casque disponible durant la formation'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 1
+    created_at: 2024-04-30T21:00:08Z
+    updated_at: 2024-04-30T21:08:30Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "# Casque pr\xE9sent:\r\nPar Technocit\xE9:\r\n- [MetaQuest Pro](https://www.google.com/search?q=meta+quest+pro)\r\n-
+      [Pico 4](https://www.google.com/search?q=pico+4)\r\n- [HTC VIVE XR \xC9lite](https://www.google.com/search?q=HTC+Vive+XR+Elite)\r\n-
+      [HTC VIVE Pro 2](https://www.google.com/search?q=HTC+Vive+Pro+2)\r\n- [Pimax
+      Crystal](https://www.google.com/search?q=pimax+crystal)\r\n- [Oculus quest
+      2](https://www.google.com/search?q=meta+quest+2)\r\n\r\nPar Eloi:\r\n- [Quest
+      1-2-3](https://www.google.com/search?q=Quest+1+2+3+headset+vr)\r\n- [Oculus
+      Rift CV1](https://www.google.com/search?q=oculus+rift+CV1)\r\n- [Lynx R1](https://www.google.com/search?q=Lynx+R1)\r\n-
+      [Homido Mini (^^'  )](https://www.google.com/search?q=homido+mini)"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/10/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/11
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/11/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/11/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/11/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/11
+    id: -2022384938
+    node_id: I_kwDOL1Wubs6HdNrW
+    number: 11
+    title: 'Topic: Use manifest to sync package on the same project.'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-04-30T22:25:41Z
+    updated_at: 2024-04-30T22:32:44Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: "During this workshop, we are going to work indirectly with 24 students
+      (12 Dev, 12 Game Designer)\r\n\r\nTo synchronise all this work, I used Google
+      Sheet in the previous project, Magic Door 24:\r\n[![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDrone/assets/20149493/a989b9b2-1e6f-4e87-8e40-61d76be77cb0)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRI-M60nMVqr8Y9U5JUmLPagetZSnvPIgGvUH9k-_SpExI79eswPicqGHH7coprFGV8HFQ6Zp0HesqK/pubhtml) 
+      \r\n[https://docs.google.com/spreadsheets/d/e/2PACX-1vRI-M60nMVqr8Y9U5JUmLPagetZSnvPIgGvUH9k-_SpExI79eswPicqGHH7coprFGV8HFQ6Zp0HesqK/pubhtml](https://docs.google.com/spreadsheets/d/e/2PACX-1vRI-M60nMVqr8Y9U5JUmLPagetZSnvPIgGvUH9k-_SpExI79eswPicqGHH7coprFGV8HFQ6Zp0HesqK/pubhtml)   
+      \r\nMagic Door 24: https://eloistree.itch.io/magicdooratelierdegroupetechnocite 
+      \r\n\r\nHere we are going to try to use GitHub Pull Request: \r\n[https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneManifest](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneManifest)\r\n\r\n"
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/11/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/12
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/12/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/12/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/12/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/12
+    id: -2004016936
+    node_id: I_kwDOL1Wubs6IjSDY
+    number: 12
+    title: 'Topic, Guide: Cool guide about use of Coroutine and MoveNext'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-05-11T15:02:52Z
+    updated_at: 2024-05-11T15:02:52Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: https://web.archive.org/web/20120713001629/http://www.altdevblogaday.com/2011/07/07/unity3d-coroutines-in-detail/
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/12/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/13
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/13/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/13/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/13/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/13
+    id: -1968706402
+    node_id: I_kwDOL1Wubs6Kp-ye
+    number: 13
+    title: 'Topic: June 2024 Meta Presence tool '
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 3
+    created_at: 2024-05-30T18:04:06Z
+    updated_at: 2024-05-30T20:48:30Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: 'Git ignore: https://www.toptal.com/developers/gitignore/api/unity
+
+      Git:
+      https://github.com/EloiStree/HelloVR_June2024
+
+'
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/13/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/14
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/14/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/14/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/14/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/14
+    id: -1967666790
+    node_id: I_kwDOL1Wubs6Kt8ma
+    number: 14
+    title: 'Topic: Drone Racing Shape'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 1
+    created_at: 2024-05-31T08:54:12Z
+    updated_at: 2024-05-31T09:55:27Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: '![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/2687d116-6184-4251-865d-8b1b658816f6)
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/4d8730fb-d8d3-4839-9a14-5a6f83d184b6)
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/00c54efc-2df8-4509-b462-9bbc40b090df)
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/439cebcd-53f2-4403-9528-0ffcf2b65cb1)
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/f6d2f343-1e0f-4e4a-9905-89c17176e188)
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/a3335650-594a-4b40-bbb4-f65d788a1b6f)
+
+      
+
+      
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/ea014a2e-a66b-4625-8585-52ab4063aaec)
+
+      ![image](https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/assets/20149493/e78c8f23-e4f3-4348-bd5c-207291b5e26b)
+
+      
+
+'
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/14/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  - url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/15
+    repository_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons
+    labels_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/15/labels{/name}
+    comments_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/15/comments
+    events_url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/15/events
+    html_url: https://github.com/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/15
+    id: -1966586450
+    node_id: I_kwDOL1Wubs6KyEWu
+    number: 15
+    title: 'Topic: June 2024 Open XR ToolKit3 on Unity3D'
+    user:
+      login: EloiStree
+      id: 20149493
+      node_id: MDQ6VXNlcjIwMTQ5NDkz
+      avatar_url: https://avatars.githubusercontent.com/u/20149493?v=4
+      gravatar_id: 
+      url: https://api.github.com/users/EloiStree
+      html_url: https://github.com/EloiStree
+      followers_url: https://api.github.com/users/EloiStree/followers
+      following_url: https://api.github.com/users/EloiStree/following{/other_user}
+      gists_url: https://api.github.com/users/EloiStree/gists{/gist_id}
+      starred_url: https://api.github.com/users/EloiStree/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/EloiStree/subscriptions
+      organizations_url: https://api.github.com/users/EloiStree/orgs
+      repos_url: https://api.github.com/users/EloiStree/repos
+      events_url: https://api.github.com/users/EloiStree/events{/privacy}
+      received_events_url: https://api.github.com/users/EloiStree/received_events
+      type: User
+      site_admin: 0
+    labels: []
+    state: open
+    locked: 0
+    assignee:
+      login: 
+      id: 0
+      node_id: 
+      avatar_url: 
+      gravatar_id: 
+      url: 
+      html_url: 
+      followers_url: 
+      following_url: 
+      gists_url: 
+      starred_url: 
+      subscriptions_url: 
+      organizations_url: 
+      repos_url: 
+      events_url: 
+      received_events_url: 
+      type: 
+      site_admin: 0
+    assignees: []
+    milestone: 
+    comments: 0
+    created_at: 2024-05-31T18:29:25Z
+    updated_at: 2024-05-31T18:29:25Z
+    closed_at: 
+    author_association: OWNER
+    active_lock_reason: 
+    body: 
+    reactions:
+      url: https://api.github.com/repos/EloiStree/2024_07_01_HelloUnityShieldDroneMons/issues/15/reactions
+      total_count: 0
+      _1: 0
+      laugh: 0
+      hooray: 0
+      confused: 0
+      heart: 0
+      rocket: 0
+      eyes: 0
+    tim: 
+  m_issueGroup: []
+--- !u!114 &528590526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528590522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f684e373e72788c459684a8aa2f85f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_userId: EloiStree
+  m_respositoryId: 2024_07_01_HelloUnityShieldDroneMons
+  m_issueId: 200
+  m_respAPIFormatComment: https://api.github.com/repos/{0}/{1}/issues/{2}/comments
+  m_respAPIFormatEvents: https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events
+  m_respAPIFormatIssues: https://api.github.com/repos/{0}/{1}/issues/{2}
+  m_respAPIFormatPages: https://api.github.com/repos/{0}/{1}/issues?per_page={3}&page={2}
+  m_respAPIFormatPagesComments: https://api.github.com/repos/{0}/{1}/issues/comments/?per_page={3}&page={2}
+  m_rateLimite: https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting
+  m_elementPerPage: 100
+  m_pageToLoad: 100
+  m_whereToStoreitDirectory: {fileID: 528590524}
+  m_useAuthToken: 0
+  m_authToken: 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
+  m_endReach: 1
 --- !u!1 &877782524
 GameObject:
   m_ObjectHideFlags: 0
@@ -21390,12 +22751,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &961739751
 AudioListener:
   m_ObjectHideFlags: 0
@@ -21414,7 +22775,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -21581,6 +22942,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4917588531105017554, guid: df7e304f61733ce4a99c336fc16bfbc6,
+        type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 528590523}
     - targetCorrespondingSourceObject: {fileID: 4917588531105017554, guid: df7e304f61733ce4a99c336fc16bfbc6,
         type: 3}
       insertIndex: -1
