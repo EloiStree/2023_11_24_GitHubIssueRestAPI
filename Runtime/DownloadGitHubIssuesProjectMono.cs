@@ -1,3 +1,4 @@
+using Eloi;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -16,10 +17,20 @@ public class DownloadGitHubIssuesProjectMono : MonoBehaviour
     public string m_respAPIFormatPagesComments = "https://api.github.com/repos/{0}/{1}/issues/comments/?per_page={3}&page={2}";
     public string m_rateLimite = "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting";
 
+
+    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events?per_page=1&page=4
+    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events/2
+    // All issue in a json
+    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events
+    //Get info on issue from id
+    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events/10866976185
+    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/2
+
+
     public int m_elementPerPage=20;
     public int m_pageToLoad = 100;
     string m_jsonResult;
-    public Eloi.AbstractMetaAbsolutePathDirectoryMono m_whereToStoreitDirectory;
+    public Eloi.A_PathTypeAbsoluteDirectoryMono m_whereToStoreitDirectory;
     [ContextMenu("Refresh")]
 
     public void Refresh()
@@ -63,7 +74,7 @@ public class DownloadGitHubIssuesProjectMono : MonoBehaviour
 
     }
     public bool m_useAuthToken;
-    public string m_authToken = "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";
+    public string m_authToken = "";
     public bool m_endReach = false;
 
     public string GetRepoRelative() { return $"/GitIssues/{m_userId}/{m_respositoryId}/"; }
@@ -86,10 +97,10 @@ public class DownloadGitHubIssuesProjectMono : MonoBehaviour
                 Debug.Log("Response: " + webRequest.downloadHandler.text);
                 string t = webRequest.downloadHandler.text;
                 m_jsonResult = webRequest.downloadHandler.text;
-                Eloi.IMetaAbsolutePathFileGet file = new Eloi.MetaAbsolutePathFile(m_whereToStoreitDirectory.GetPath() +
+                Eloi.I_PathTypeAbsoluteFileGet file = new Eloi.PathTypeAbsoluteFile(m_whereToStoreitDirectory.GetPath() +
                     string.Format(GetRepoRelative ()+ "I{0:0000}.json", m_issueId));
                 if (m_whereToStoreitDirectory)
-                    Eloi.E_FileAndFolderUtility.CreateOrOverrideFile(file, m_jsonResult);
+                    AbsoluteTypePathTool.OverwriteFile(file, m_jsonResult);
 
             }
         }
@@ -106,10 +117,10 @@ public class DownloadGitHubIssuesProjectMono : MonoBehaviour
             {
                 Debug.Log("Response: " + webRequest.downloadHandler.text);
                 string t = webRequest.downloadHandler.text;
-                Eloi.IMetaAbsolutePathFileGet file = new Eloi.MetaAbsolutePathFile(m_whereToStoreitDirectory.GetPath() +
+                Eloi.I_PathTypeAbsoluteFileGet file = new Eloi.PathTypeAbsoluteFile(m_whereToStoreitDirectory.GetPath() +
                     string.Format(GetRepoRelative() + "C{0:0000}.json", m_issueId));
                 if (m_whereToStoreitDirectory)
-                    Eloi.E_FileAndFolderUtility.CreateOrOverrideFile(file, m_jsonResult);
+                    AbsoluteTypePathTool.OverwriteFile(file, m_jsonResult);
 
             }
         }
@@ -132,10 +143,10 @@ public class DownloadGitHubIssuesProjectMono : MonoBehaviour
                 Debug.Log("Response: " + webRequest.downloadHandler.text);
                 string t = webRequest.downloadHandler.text;
                 m_jsonResult = webRequest.downloadHandler.text;
-                Eloi.IMetaAbsolutePathFileGet file = new Eloi.MetaAbsolutePathFile(m_whereToStoreitDirectory.GetPath() +
+                Eloi.I_PathTypeAbsoluteFileGet file = new Eloi.PathTypeAbsoluteFile(m_whereToStoreitDirectory.GetPath() +
                     string.Format(GetRepoRelative() + "P{0:0000}.json", page));
                 if (m_whereToStoreitDirectory)
-                    Eloi.E_FileAndFolderUtility.CreateOrOverrideFile(file, m_jsonResult);
+                    AbsoluteTypePathTool.OverwriteFile(file, m_jsonResult);
                 if (m_jsonResult.Length < 500)
                     m_endReach = true;
             }
@@ -144,11 +155,4 @@ public class DownloadGitHubIssuesProjectMono : MonoBehaviour
     }
 
 
-    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events?per_page=1&page=4
-    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events/2
-    // All issue in a json
-    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events
-    //Get info on issue from id
-    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/events/10866976185
-    // https://api.github.com/repos/EloiStree/HelloLynxR1/issues/2
 }

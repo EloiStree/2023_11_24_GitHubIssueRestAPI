@@ -2,7 +2,8 @@
     "name": "be.eloistree.githubissuerest",
     "rootNamespace": "",
     "references": [
-        "be.eloistree.generaltoolbox"
+        "be.eloistree.codetag",
+        "be.eloistree.pathtypereadwrite"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

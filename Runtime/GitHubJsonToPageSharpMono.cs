@@ -7,7 +7,7 @@ public class GitHubJsonToPageSharpMono : MonoBehaviour
 {
     public string m_userId = "EloiStree";
     public string m_respositoryId = "HelloLynxR1";
-    public Eloi.AbstractMetaAbsolutePathDirectoryMono m_whereToStoreitDirectory;
+    public Eloi.A_PathTypeAbsoluteDirectoryMono m_whereToStoreitDirectory;
     public string[] m_filesFound;
     public string m_path;
     public List<GitHubJsonBeans.Issue> m_issue;
@@ -19,7 +19,12 @@ public class GitHubJsonToPageSharpMono : MonoBehaviour
         m_issueGroup.Clear();
         m_path = m_whereToStoreitDirectory.GetPath();
         Debug.Log(m_path);
-        m_filesFound= Directory.GetFiles(m_path+ $"\\GitIssues\\{m_userId}\\{m_respositoryId}", "*I*.json", SearchOption.AllDirectories);
+        string path = m_path + $"\\GitIssues\\{m_userId}\\{m_respositoryId}";
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+        m_filesFound= Directory.GetFiles(path, "*I*.json", SearchOption.AllDirectories);
         foreach (var item in m_filesFound)
         {
             string t = File.ReadAllText(item);

@@ -1,16 +1,17 @@
-using Eloi;
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using Eloi;
 
 public class ConvertAllIssuesToAFullPageMono : MonoBehaviour
 {
     public GitHubJsonToPageSharpMono m_source;
 
-    public Eloi.AbstractMetaAbsolutePathDirectoryMono m_whereToStoreitDirectory;
-    public Eloi.MetaFileNameWithExtension m_fileName= new Eloi.MetaFileNameWithExtension("FullIssues","md");
+    public A_PathTypeAbsoluteDirectoryMono m_whereToStoreitDirectory;
+    public Eloi.FileNameWithExtension m_fileName= new Eloi.FileNameWithExtension("FullIssues","md");
     public bool m_orderBy;
     public bool m_orderByTitle;
 
@@ -37,15 +38,15 @@ public class ConvertAllIssuesToAFullPageMono : MonoBehaviour
 
         }
 
-        Eloi.E_FileAndFolderUtility.CreateOrOverrideFile(GetFilePath(), sb.ToString());
+        AbsoluteTypePathTool.OverwriteFile(GetFilePath(), sb.ToString() );
     }
 
     [ContextMenu("Create All In Scene")]
     public void CreateAllInScene() {
         GameObject.FindObjectsOfType<ConvertAllIssuesToAFullPageMono>().AsParallel().ForAll(k=>k.Create());
     }
-    public IMetaAbsolutePathFileGet GetFilePath() {
-        return  Eloi.E_FileAndFolderUtility.Combine(m_whereToStoreitDirectory, m_fileName);
+    public I_PathTypeAbsoluteFileGet GetFilePath() {
+        return  TypePathCombineTool.Combine(m_whereToStoreitDirectory, m_fileName);
     }
     [ContextMenu("Open File")]
     public void OpenFile()
