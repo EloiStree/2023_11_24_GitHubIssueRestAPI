@@ -8,7 +8,7 @@ public class GitHubRestMono_StoreIssue : MonoBehaviour
     public A_PathTypeAbsoluteDirectoryMono m_whereToStore;
 
     public void OverwriteJsonIssue(
-        I_OwnGitHubRepositoryIssueIdGet issueRef,
+        I_OwnGitHubIssueReferenceGet issueRef,
         TextDownloadedByCoroutine textDownloaded) { 
     
         if(textDownloaded.m_hadError || textDownloaded.m_text.Length>0)
@@ -19,7 +19,7 @@ public class GitHubRestMono_StoreIssue : MonoBehaviour
     }
 
     public void ExistsIssueFolder(
-        I_OwnGitHubRepositoryIssueIdGet issueRef,
+        I_OwnGitHubIssueReferenceGet issueRef,
         out bool exists)
     {
 
@@ -27,7 +27,7 @@ public class GitHubRestMono_StoreIssue : MonoBehaviour
         exists = AbsoluteTypePathTool.Exists(whereToStoreFolder);
     }
     public void ExistsIssueJsonFolder(
-        I_OwnGitHubRepositoryIssueIdGet issueRef,
+        I_OwnGitHubIssueReferenceGet issueRef,
         out bool exists)
     {
 
@@ -35,7 +35,7 @@ public class GitHubRestMono_StoreIssue : MonoBehaviour
         exists = AbsoluteTypePathTool.Exists(whereToStore);
     }
     public void ExistsIssueMarkdownFolder(
-        I_OwnGitHubRepositoryIssueIdGet issueRef,
+        I_OwnGitHubIssueReferenceGet issueRef,
         out bool exists)
     {
 

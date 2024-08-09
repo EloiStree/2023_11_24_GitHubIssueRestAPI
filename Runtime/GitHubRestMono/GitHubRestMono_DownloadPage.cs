@@ -28,7 +28,7 @@ public class GitHubRestMono_DownloadPage : MonoBehaviour
     {
 
 
-        yield return GitHubCoroutineDownloadTool.MakeRequest(
+        yield return GitHubDownloadWebPageTool.MakeRequest(
             m_jsonResultComment,
             string.Format(m_respAPIFormatComment, m_issueToDownload.m_usernameId, m_issueToDownload.m_respositoryId, m_issueToDownload.m_issueId)
             );
@@ -38,7 +38,7 @@ public class GitHubRestMono_DownloadPage : MonoBehaviour
     {
         GitHubRest_RequestIssueJson.MakeRequestIssue(m_jsonResultIssue, m_issueToDownload, m_issueToDownload, m_issueToDownload, m_apiKey);
 
-        yield return GitHubCoroutineDownloadTool.MakeRequest(
+        yield return GitHubDownloadWebPageTool.MakeRequest(
             m_jsonResultIssue,
             string.Format(m_respAPIFormatIssues, m_issueToDownload.m_usernameId, m_issueToDownload.m_respositoryId, m_issueToDownload.m_issueId)
             );
@@ -50,26 +50,11 @@ public class GitHubRestMono_DownloadPage : MonoBehaviour
 
     }
 }
-
 [System.Serializable]
-public struct STRUCT_UserRepository: I_OwnGitHubRepositoryNameGet, I_OwnGitHubUserNameGet
-{
-    public string m_userId;
-    public string m_respositoryId;
-    public string GetGitHubUserName()
-    {
-        return m_userId;
-    }
-    public string GetGitHubRepositoryName()
-    {
-        return m_respositoryId;
-    }
-}
-[System.Serializable]
-public struct STRUCT_User: I_OwnGitHubUserNameGet, I_OwnGitHubUserNameSet
+public struct STRUCT_GitHubUser: I_OwnGitHubUserNameGet, I_OwnGitHubUserNameSet
 {
     public string m_userNamedId;
-    public STRUCT_User(string name = "")
+    public STRUCT_GitHubUser(string name = "")
     {
         m_userNamedId = name;
     }
@@ -84,7 +69,7 @@ public struct STRUCT_User: I_OwnGitHubUserNameGet, I_OwnGitHubUserNameSet
     }
 }
 
-public interface I_OwnGitHubRepositoryOfUserGet: I_OwnGitHubUserNameGet, I_OwnGitHubRepositoryNameGet
+public interface I_OwnGitHubRepositoryReferenceGet: I_OwnGitHubUserNameGet, I_OwnGitHubRepositoryNameGet
 {
 
 }
@@ -128,12 +113,22 @@ public struct STRUCT_IssueId: I_OwnGitHubIssueIdGet, I_OwnGitHubIssueIdSet
         m_issueId = id;
     }
 }
+
+public interface I_OwnGitHubIssueReference : I_OwnGitHubIssueReferenceGet, I_OwnGitHubIssueReferenceSet
+{
+
+}
+public interface I_OwnUniqueStringIdGet
+{
+    string GetUniqueStringId();
+}
 [System.Serializable]
-public struct STRUCT_UserRepositoryIssueId: I_OwnGitHubRepositoryIssueIdGet, I_OwnGitHubRepositoryIssueIdSet
+public struct STRUCT_UserRepositoryIssueId: I_OwnGitHubIssueReference, I_OwnUniqueStringIdGet
 {
     public string m_usernameId;
     public string m_respositoryId;
     public int m_issueId; 
+
     public string GetGitHubUserName()
     {
         return m_usernameId;
@@ -161,14 +156,36 @@ public struct STRUCT_UserRepositoryIssueId: I_OwnGitHubRepositoryIssueIdGet, I_O
     {
         m_issueId = id;
     }
+
+    public string GetUniqueStringId()
+    {
+        return $"{m_usernameId}_{m_respositoryId}_{m_issueId}";
+    }
 }
 
-public interface I_OwnGitHubRepositoryIssueIdGet: I_OwnGitHubUserNameGet, I_OwnGitHubRepositoryNameGet, I_OwnGitHubIssueIdGet
-{ 
+public interface I_OwnGitHubIssueReferenceGet : I_OwnGitHubUserNameGet, I_OwnGitHubRepositoryNameGet, I_OwnGitHubIssueIdGet
+{
+
+}
+public interface I_OwnGitHubCommentReferenceGet : I_OwnGitHubUserNameGet, I_OwnGitHubRepositoryNameGet, I_OwnGitHubIssueIdGet, I_OwnGitHubCommentIdGet
+{
+
+}
+public interface I_OwnGitHubCommentReferenceSet : I_OwnGitHubUserNameSet, I_OwnGitHubRepositoryNameSet, I_OwnGitHubIssueIdSet, I_OwnGitHubCommentIdSet
+{
 
 }
 
-public interface I_OwnGitHubRepositoryIssueIdSet : I_OwnGitHubIssueIdSet, I_OwnGitHubRepositoryNameSet, I_OwnGitHubUserNameSet { 
+public interface I_OwnGitHubCommentIdGet
+{
+    public ulong GetGitHubCommentId();
+}
+public interface I_OwnGitHubCommentIdSet
+{
+    public void SetGitHubCommentId(int commentId);
+}
+
+public interface I_OwnGitHubIssueReferenceSet : I_OwnGitHubIssueIdSet, I_OwnGitHubRepositoryNameSet, I_OwnGitHubUserNameSet { 
 }
 public interface I_OwnGitHubAuthPrivateApiKeyGet
 {

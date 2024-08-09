@@ -21,7 +21,7 @@ public class GitHubRest_RequestIssueJson
         I_OwnGitHubAuthPrivateApiKeyGet privateAuthApiKey)
     {
 
-        yield return GitHubCoroutineDownloadTool.MakeRequest(
+        yield return GitHubDownloadWebPageTool.MakeRequest(
             callback,
             string.Format("https://api.github.com/repos/{0}/{1}/issues/{2}",
             userId.GetGitHubUserName(),
@@ -48,9 +48,4 @@ public struct STRUCT_GitHubRawJsonIssue
     public string m_requestUrl;
     public string m_rawJson;
 }
-[System.Serializable]
-public struct STRUCT_GitHubRawJsonIssueComments
-{
-    public string m_requestUrl;
-    public string m_rawJson;
-}
+

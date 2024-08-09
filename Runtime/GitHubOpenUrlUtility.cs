@@ -5,19 +5,35 @@ using UnityEngine;
 public class GitHubOpenUrlUtility : MonoBehaviour
 {
 
+    public static void OpenUrlAtComment(string owner, string repo, int issueNumber, ulong commentId)
+    {
+        OpenUrl(BuildAtCommentUrl(owner, repo, issueNumber, commentId));
+    }
+
+    public static string BuildAtCommentUrl(string owner, string repo, int issueNumber, ulong commentId)
+    {
+        return string.Format($"https://github.com/{owner}/{repo}/issues/{issueNumber}#issuecomment-{commentId}");
+    }
+
     public static void OpenUrl(string url)
     {
         Application.OpenURL(url);
     }
-    public static void OpenIssueUrl(string owner, string repo, int issueNumber)
+    public static void OpenIssue(string owner, string repo, int issueNumber)
     {
-        OpenUrl(string.Format($"https://github.com/{owner}/{repo}/issues/{issueNumber}"));
+        OpenUrl(BuildIssueUrl(owner, repo, issueNumber));
     }
-    public static void OpenRepositoryUrl(string owner, string repo)
+
+    public static string BuildIssueUrl(string owner, string repo, int issueNumber)
+    {
+        return string.Format($"https://github.com/{owner}/{repo}/issues/{issueNumber}");
+    }
+
+    public static void OpenRepository(string owner, string repo)
     {
         OpenUrl(string.Format($"https://github.com/{owner}/{repo}"));
     }
-    public static void OpenUserUrl(string owner)
+    public static void OpenUser(string owner)
     {
         OpenUrl(string.Format($"https://github.com/{owner}"));
     }
@@ -30,22 +46,27 @@ public class GitHubOpenUrlUtility : MonoBehaviour
     {
         OpenUrl(string.Format($"https://github.com/{owner}/{repo}/releases"));
     }
-    public static void OpenUrlToSubmitIssue(I_OwnGitHubRepositoryOfUserGet toOpen, string title, string body)
+    public static void OpenUrlToSubmitIssue(I_OwnGitHubRepositoryReferenceGet toOpen, string title, string body)
     {
         OpenUrlToSubmitIssue(toOpen.GetGitHubUserName(), toOpen.GetGitHubRepositoryName(), title, body);
     }
 
-    public static void OpenUrl(I_OwnGitHubRepositoryIssueIdGet toOpen)
+    public static void OpenUrl(I_OwnGitHubIssueReferenceGet toOpen)
     {
-        OpenIssueUrl(toOpen.GetGitHubRepositoryName(), toOpen.GetGitHubUserName(), toOpen.GetGitHubIssueId());
+        OpenIssue(toOpen.GetGitHubRepositoryName(), toOpen.GetGitHubUserName(), toOpen.GetGitHubIssueId());
     }
-    public static void OpenUrl(I_OwnGitHubRepositoryOfUserGet toOpen)
+    public static void OpenUrl(I_OwnGitHubRepositoryReferenceGet toOpen)
     {
-        OpenRepositoryUrl(toOpen.GetGitHubRepositoryName(), toOpen.GetGitHubUserName());
+        OpenRepository(toOpen.GetGitHubRepositoryName(), toOpen.GetGitHubUserName());
     }
     public static void OpenUrl(I_OwnGitHubUserNameGet toOpen)
     {
-        OpenUserUrl(toOpen.GetGitHubUserName());
+        OpenUser(toOpen.GetGitHubUserName());
+    }
+
+    public static void OpenUrl(I_OwnGitHubCommentReferenceGet toOpen) { 
+    
+        OpenUrlAtComment(toOpen.GetGitHubUserName(), toOpen.GetGitHubRepositoryName(), toOpen.GetGitHubIssueId(), toOpen.GetGitHubCommentId());
     }
 
 }
