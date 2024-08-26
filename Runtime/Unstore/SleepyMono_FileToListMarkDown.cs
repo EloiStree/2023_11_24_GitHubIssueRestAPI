@@ -13,6 +13,10 @@ public class SleepyMono_FileToListMarkDown : MonoBehaviour
     public A_PathTypeAbsoluteDirectoryMono m_root;
     public A_PathTypeAbsoluteFileMono m_markdownResult;
     public A_PathTypeAbsoluteFileMono m_markdownIssueCommentResult;
+    public A_PathTypeAbsoluteFileMono m_markdownIssueTitle;
+
+    public string m_startWith = "Keyword:";
+    public A_PathTypeAbsoluteFileMono m_markdownIssueTitleStartWith;
 
     public string[] m_issueJson;
     public string[] m_commentsJson;
@@ -116,6 +120,8 @@ public class SleepyMono_FileToListMarkDown : MonoBehaviour
     [ContextMenu("Build MarkDown")]
     public void BuildMarkDown()
     {
+        StringBuilder justTitle = new StringBuilder();
+        StringBuilder justTitleFiltered = new StringBuilder();
         RefreshTextToFilteredClass();
         StringBuilder builder = new StringBuilder();
         builder.AppendLine("# Issues");
@@ -145,6 +151,15 @@ public class SleepyMono_FileToListMarkDown : MonoBehaviour
                 string url = GitHubOpenUrlUtility.BuildIssueUrl(item.m_repository.GetGitHubUserName(), item.m_repository.GetGitHubRepositoryName(), issue.number);
 
                 builder.AppendLine($"## [{issue.number}]({url})| {issue.title}");
+                justTitle.AppendLine($"- [ ] [{string.Format("{0:00000}",issue.number)}]({url})| {issue.title}");
+                if (issue.title.ToLower().StartsWith(m_startWith.ToLower().Trim())) {
+                    string s = string.Format("{0}/{1}#{2:00000}",
+                        item.m_repository.GetGitHubUserName(),
+                        item.m_repository.GetGitHubRepositoryName(),
+                        issue.number);
+                    justTitleFiltered.AppendLine($"- [ ] [{issue.number}]({url})| - {s} | {issue.title}");
+
+                }
                 builder.AppendLine();
                 builder.AppendLine($"{issue.body}");
 
@@ -163,6 +178,8 @@ public class SleepyMono_FileToListMarkDown : MonoBehaviour
             
         });
         AbsoluteTypePathTool.OverwriteFile(m_markdownIssueCommentResult, builder.ToString());
+        AbsoluteTypePathTool.OverwriteFile(m_markdownIssueTitle, justTitle.ToString());
+        AbsoluteTypePathTool.OverwriteFile(m_markdownIssueTitleStartWith, justTitleFiltered.ToString());
 
     }
 }
