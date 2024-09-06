@@ -1,9 +1,9 @@
 {
-    "name": "be.eloistree.githubissuerest",
+    "name": "be.elab.githubissuerest",
     "rootNamespace": "",
     "references": [
-        "be.eloistree.codetag",
-        "be.eloistree.pathtypereadwrite"
+        "be.elab.codetag",
+        "be.elab.pathtypereadwrite"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

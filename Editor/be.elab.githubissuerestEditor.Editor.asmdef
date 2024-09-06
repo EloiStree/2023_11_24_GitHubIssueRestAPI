@@ -1,7 +1,7 @@
 
 {                                                                   
-            "name": "be.eloistree.githubissuerestEditor",          
-    "references": ["be.eloistree.githubissuerest"
+            "name": "be.elab.githubissuerestEditor",          
+    "references": ["be.elab.githubissuerest"
 ],                                                              
     "optionalUnityReferences": [],                                  
     "includePlatforms": [                                           
