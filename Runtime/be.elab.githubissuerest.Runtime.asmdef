@@ -3,7 +3,7 @@
     "rootNamespace": "",
     "references": [
         "be.elab.codetag",
-        "be.elab.pathtypereadwrite"
+        "be.elab.pathtype"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
